@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quality Education Platform</title>
+</head>
+<body>
+    <h1>Welcome to Learn2Code 📚</h1>
+    <p>Try this quiz: Write Python code to print "Hello World".</p>
+    <form method="POST" action="/quiz">
+        <input type="text" name="answer" placeholder="Type your code here">
+        <button type="submit">Submit</button>
+    </form>
+    {% if result %}
+        <p><strong>{{ result }}</strong></p>
+    {% endif %}
+</body>
+</html>
